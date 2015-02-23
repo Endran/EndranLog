@@ -1,4 +1,4 @@
-package nl.endran.endranlog;
+package nl.endran.logger;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

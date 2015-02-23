@@ -1,4 +1,4 @@
-package nl.endran.endranlog;
+package nl.endran.logger;
 
 public interface Logger {
 

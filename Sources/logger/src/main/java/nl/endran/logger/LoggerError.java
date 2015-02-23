@@ -1,12 +1,12 @@
-package nl.endran.endranlog;
+package nl.endran.logger;
 
 import android.util.Log;
 
-public class LoggerInfo implements Logger {
+public class LoggerError implements Logger {
     String tag;
     String name;
 
-    public LoggerInfo(String tag, String name) {
+    public LoggerError(String tag, String name) {
         this.tag = tag;
         this.name = name;
     }
@@ -24,19 +24,15 @@ public class LoggerInfo implements Logger {
     }
 
     public void info(String message) {
-        Log.i(tag, name + " :: " + message);
     }
 
     public void info(String message, Throwable throwable) {
-        Log.i(tag, name + " :: " + message, throwable);
     }
 
     public void warn(String message) {
-        Log.w(tag, name + " :: " + message);
     }
 
     public void warn(String message, Throwable throwable) {
-        Log.w(tag, name + " :: " + message, throwable);
     }
 
     public void error(String message) {

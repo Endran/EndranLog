@@ -1,14 +1,7 @@
-package nl.endran.endranlog;
+package nl.endran.logger;
 
-import android.util.Log;
-
-public class LoggerError implements Logger {
-    String tag;
-    String name;
-
-    public LoggerError(String tag, String name) {
-        this.tag = tag;
-        this.name = name;
+public class LoggerSilent implements Logger {
+    public LoggerSilent() {
     }
 
     public void verbose(String message) {
@@ -36,10 +29,8 @@ public class LoggerError implements Logger {
     }
 
     public void error(String message) {
-        Log.e(tag, name + " :: " + message);
     }
 
     public void error(String message, Throwable throwable) {
-        Log.e(tag, name + " :: " + message, throwable);
     }
 }
